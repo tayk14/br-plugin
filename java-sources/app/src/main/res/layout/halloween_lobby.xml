@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:padding="30dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.8">
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:id="@+id/playerList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="СПИСОК ИГРОКОВ" android:fontFamily="@font/montserrat_bold"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:background="@drawable/halloween_choose_tile_back" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/playerList"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/leader_part" android:paddingBottom="30dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <Button android:textColor="#ffffff" android:id="@+id/invite" android:background="@drawable/button_gray_transparent" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="160dp" android:text="Пригласить" android:drawableLeft="@drawable/br_plus_icon_general" android:drawablePadding="6dp" android:layout_centerInParent="true" android:fontFamily="@font/montserrat_bold"/>
+        <TextView android:textColor="#ffffff" android:id="@+id/start_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Начни игру!" android:layout_above="@+id/start" android:layout_centerHorizontal="true" android:fontFamily="@font/montserrat_regular"/>
+        <Button android:textColor="#ffffff" android:id="@+id/start" android:background="@drawable/donate_tile_button_inactive" android:layout_width="140dp" android:layout_height="50dp" android:minWidth="160dp" android:text="СТАРТ" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:fontFamily="@font/montserrat_bold"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/player_part" android:background="@drawable/halloween_choose_tile_back" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:layout_weight="1">
+        <View android:id="@+id/view6" android:background="@drawable/info_image" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="15dp"/>
+        <TextView android:textColor="#ffffff" android:id="@+id/textView15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="35dp" android:text="Ожидайте начала игры" android:fontFamily="@font/montserrat_regular"/>
+    </LinearLayout>
+</LinearLayout>

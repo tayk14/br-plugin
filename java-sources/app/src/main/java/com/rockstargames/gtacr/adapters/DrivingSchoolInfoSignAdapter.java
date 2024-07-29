@@ -1,0 +1,84 @@
+package com.rockstargames.gtacr.adapters;
+
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
+import blackrussia.online.R;
+import blackrussia.online.databinding.DrivingSchoolSignInfoItemBinding;
+import com.rockstargames.gtacr.data.SignObj;
+import com.rockstargames.gtacr.gui.drivingSchool.UIClassInfoLayout;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+//@Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\f\u0012\b\u0012\u00060\u0002R\u00020\u00000\u0001:\u0001\u0013B\u001b\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004\u0012\u0006\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\b\u0010\t\u001a\u00020\nH\u0016J\u001c\u0010\u000b\u001a\u00020\f2\n\u0010\r\u001a\u00060\u0002R\u00020\u00002\u0006\u0010\u000e\u001a\u00020\nH\u0016J\u001c\u0010\u000f\u001a\u00060\u0002R\u00020\u00002\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\nH\u0016R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0014"}, d2 = {"Lcom/rockstargames/gtacr/adapters/DrivingSchoolInfoSignAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Lcom/rockstargames/gtacr/adapters/DrivingSchoolInfoSignAdapter$ViewHolder;", "signList", "", "Lcom/rockstargames/gtacr/data/SignObj;", "currentRoot", "Lcom/rockstargames/gtacr/gui/drivingSchool/UIClassInfoLayout;", "(Ljava/util/List;Lcom/rockstargames/gtacr/gui/drivingSchool/UIClassInfoLayout;)V", "getItemCount", "", "onBindViewHolder", "", "holder", "position", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_cppRelease"}, k = 1, mv = {1, 6, 0}, xi = 48)
+public final class DrivingSchoolInfoSignAdapter extends RecyclerView.Adapter<DrivingSchoolInfoSignAdapter.ViewHolder> {
+    private final UIClassInfoLayout currentRoot;
+    private final List<SignObj> signList;
+
+    public DrivingSchoolInfoSignAdapter(List<SignObj> signList, UIClassInfoLayout currentRoot) {
+        Intrinsics.checkNotNullParameter(signList, "signList");
+        Intrinsics.checkNotNullParameter(currentRoot, "currentRoot");
+        this.signList = signList;
+        this.currentRoot = currentRoot;
+    }
+
+    //@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u000e\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/rockstargames/gtacr/adapters/DrivingSchoolInfoSignAdapter$ViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "binding", "Lblackrussia/online/databinding/DrivingSchoolSignInfoItemBinding;", "(Lcom/rockstargames/gtacr/adapters/DrivingSchoolInfoSignAdapter;Lblackrussia/online/databinding/DrivingSchoolSignInfoItemBinding;)V", "bind", "", "signItem", "Lcom/rockstargames/gtacr/data/SignObj;", "app_cppRelease"}, k = 1, mv = {1, 6, 0}, xi = 48)
+    public final class ViewHolder extends RecyclerView.ViewHolder {
+        private final DrivingSchoolSignInfoItemBinding binding;
+        final DrivingSchoolInfoSignAdapter this$0;
+
+        public ViewHolder(DrivingSchoolInfoSignAdapter this$0, DrivingSchoolSignInfoItemBinding binding) {
+            super(binding.getRoot());
+            Intrinsics.checkNotNullParameter(this$0, "this$0");
+            Intrinsics.checkNotNullParameter(binding, "binding");
+            this.this$0 = this$0;
+            this.binding = binding;
+        }
+
+        public final void bind(SignObj signItem) {
+            Intrinsics.checkNotNullParameter(signItem, "signItem");
+            DrivingSchoolSignInfoItemBinding drivingSchoolSignInfoItemBinding = this.binding;
+            DrivingSchoolInfoSignAdapter drivingSchoolInfoSignAdapter = this.this$0;
+            SpannableString leftSignName = signItem.getLeftSignName();
+            leftSignName.setSpan(new ForegroundColorSpan(ContextCompat.getColor(drivingSchoolInfoSignAdapter.currentRoot.getContext(), R.color.diving_school_green_text_color)), signItem.getLeftStartSpan(), leftSignName.length(), 33);
+            drivingSchoolSignInfoItemBinding.iconSingLeft.setImageResource(signItem.getLeftSignIcon());
+            drivingSchoolSignInfoItemBinding.titleSignLeft.setText(leftSignName);
+            drivingSchoolSignInfoItemBinding.textSignLeft.setText(signItem.getLeftSignDescription());
+            if (signItem.getRightSignIcon() != null && signItem.getRightSignName() != null && signItem.getRightSignDescription() != null && signItem.getRightStartSpan() != null) {
+                SpannableString rightSignName = signItem.getRightSignName();
+                rightSignName.setSpan(new ForegroundColorSpan(ContextCompat.getColor(drivingSchoolInfoSignAdapter.currentRoot.getContext(), R.color.diving_school_green_text_color)), signItem.getRightStartSpan().intValue(), rightSignName.length(), 33);
+                drivingSchoolSignInfoItemBinding.iconSingRight.setImageResource(signItem.getRightSignIcon().intValue());
+                drivingSchoolSignInfoItemBinding.titleSignRight.setText(rightSignName);
+                drivingSchoolSignInfoItemBinding.textSignRight.setText(signItem.getRightSignDescription());
+            }
+            if (signItem.getIfShowUnderline()) {
+                drivingSchoolSignInfoItemBinding.dividerHorizontalUnderline.setVisibility(0);
+            } else {
+                drivingSchoolSignInfoItemBinding.dividerHorizontalUnderline.setVisibility(8);
+            }
+        }
+    }
+
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int i) {
+        Intrinsics.checkNotNullParameter(parent, "parent");
+        DrivingSchoolSignInfoItemBinding inflate = DrivingSchoolSignInfoItemBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
+        Intrinsics.checkNotNullExpressionValue(inflate, "inflate(LayoutInflater.f…           parent, false)");
+        return new ViewHolder(this, inflate);
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int i) {
+        Intrinsics.checkNotNullParameter(holder, "holder");
+        holder.bind(this.signList.get(i));
+    }
+
+    @Override
+    public int getItemCount() {
+        return this.signList.size();
+    }
+}

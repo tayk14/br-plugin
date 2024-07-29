@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/br_hack_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="10dp">
+        <TextView android:textSize="12sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/br_hack_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Место для подсказки" android:drawableLeft="@drawable/exclamation_mark2" android:drawablePadding="5dp" android:layout_centerInParent="true" android:fontFamily="@font/muller_bold"/>
+        <ImageView android:id="@+id/br_hack_close" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:cropToPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/br_close2"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="170dp" android:weightSum="4">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1.2">
+            <TextView android:textSize="12sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/textView4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Осталось времени:" android:fontFamily="@font/muller_bold"/>
+            <TextView android:textSize="60sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/br_hack_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="60" android:fontFamily="@font/muller_bold"/>
+            <TextView android:textSize="20sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/textView7" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="секунд" android:fontFamily="@font/muller_bold"/>
+        </LinearLayout>
+        <TableLayout android:background="@drawable/br_hack_center" android:layout_width="0px" android:layout_height="wrap_content" android:layout_weight="2">
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="6">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="30sp" android:textColor="@color/orange1" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_item_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="6">
+                <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/imageView3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="2dp" android:layout_marginRight="8dp" android:layout_marginBottom="2dp" app:srcCompat="@drawable/button_red_rectangle"/>
+                    <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_pass_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/imageView4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="2dp" android:layout_marginRight="8dp" android:layout_marginBottom="2dp" app:srcCompat="@drawable/button_red_rectangle"/>
+                    <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_pass_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/imageView5" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="2dp" android:layout_marginRight="8dp" android:layout_marginBottom="2dp" app:srcCompat="@drawable/button_red_rectangle"/>
+                    <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_pass_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/imageView6" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="2dp" android:layout_marginRight="8dp" android:layout_marginBottom="2dp" app:srcCompat="@drawable/button_red_rectangle"/>
+                    <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_pass_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/imageView7" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="2dp" android:layout_marginRight="8dp" android:layout_marginBottom="2dp" app:srcCompat="@drawable/button_red_rectangle"/>
+                    <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_pass_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="2dp" android:layout_marginRight="8dp" android:layout_marginBottom="2dp" app:srcCompat="@drawable/button_red_rectangle"/>
+                    <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_pass_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <TableLayout android:gravity="center_vertical" android:background="@drawable/br_hack_test" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="110dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp">
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="D" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="E" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="F" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="G" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="H" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="I" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="J" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:srcCompat="@drawable/br_hack_key"/>
+                <TextView android:textSize="30sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_hack_key_19" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

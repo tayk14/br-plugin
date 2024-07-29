@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="20dp" android:width="26dp" android:drawable="@drawable/inv_icon_open_chat_res"/>
+</layer-list>

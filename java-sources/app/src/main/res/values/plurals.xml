@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="invite_banner_bonus_ends">
+        <item quantity="one">БОНУСЫ ЗАКОНЧАТСЯ\nЧЕРЕЗ %d ДЕНЬ</item>
+        <item quantity="two">БОНУСЫ ЗАКОНЧАТСЯ\nЧЕРЕЗ %d ДНЯ</item>
+        <item quantity="few">БОНУСЫ ЗАКОНЧАТСЯ\nЧЕРЕЗ %d ДНЯ</item>
+        <item quantity="many">БОНУСЫ ЗАКОНЧАТСЯ\nЧЕРЕЗ %d ДНЕЙ</item>
+    </plurals>
+    <plurals name="invite_banner_bonus_ends_hours">
+        <item quantity="one">БОНУСЫ ЗАКОНЧАТСЯ\nЧЕРЕЗ %d ЧАС</item>
+        <item quantity="two">БОНУСЫ ЗАКОНЧАТСЯ\nЧЕРЕЗ %d ЧАСА</item>
+        <item quantity="few">БОНУСЫ ЗАКОНЧАТСЯ\nЧЕРЕЗ %d ЧАСА</item>
+        <item quantity="many">БОНУСЫ ЗАКОНЧАТСЯ\nЧЕРЕЗ %d ЧАСОВ</item>
+    </plurals>
+    <plurals name="invite_banner_bonus_ends_minutes">
+        <item quantity="one">БОНУСЫ ЗАКОНЧАТСЯ\nЧЕРЕЗ %d МИНУТУ</item>
+        <item quantity="two">БОНУСЫ ЗАКОНЧАТСЯ\nЧЕРЕЗ %d МИНУТЫ</item>
+        <item quantity="few">БОНУСЫ ЗАКОНЧАТСЯ\nЧЕРЕЗ %d МИНУТЫ</item>
+        <item quantity="many">БОНУСЫ ЗАКОНЧАТСЯ\nЧЕРЕЗ %d МИНУТ</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+</resources>

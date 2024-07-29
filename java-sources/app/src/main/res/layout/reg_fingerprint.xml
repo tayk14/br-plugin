@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/back" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="25dp" android:layout_marginBottom="60dp">
+        <TextView android:textSize="12sp" android:textColor="#848ba2" android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="Вернуться" android:drawableLeft="@drawable/reg_back_icon" android:drawablePadding="2dp" android:fontFamily="@font/montserrat_regular"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/finger_img" android:background="@drawable/reg_finger" android:layout_width="80dp" android:layout_height="80dp"/>
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp">
+        <Button android:textSize="12sp" android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/butt_skip" android:background="@drawable/donate_tile_button_gray" android:visibility="visible" android:layout_width="150dp" android:layout_height="45dp" android:text="Пропустить" android:fontFamily="@font/muller_bold"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/auto_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginRight="25dp">
+            <TextView android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Автовход" android:layout_weight="1" android:fontFamily="@font/montserrat_regular"/>
+            <ImageView android:id="@+id/auto_img" android:layout_width="17dp" android:layout_height="20dp" android:layout_marginLeft="5dp" android:layout_weight="1" app:srcCompat="@drawable/reg_info"/>
+        </LinearLayout>
+        <Switch android:layout_gravity="right" android:id="@+id/auto_switch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25dp" android:checked="false" android:thumb="@drawable/switch_off_circle" android:track="@drawable/switch_back_track"/>
+    </FrameLayout>
+</FrameLayout>

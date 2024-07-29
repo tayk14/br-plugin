@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/diving_school_not_actual_answer"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+</layer-list>

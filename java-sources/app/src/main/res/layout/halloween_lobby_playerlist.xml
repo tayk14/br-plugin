@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/background_gray_stroke_white" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="СПИСОК ИГРОКОВ" android:fontFamily="@font/muller_bold"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+</LinearLayout>

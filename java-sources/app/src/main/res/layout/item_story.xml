@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_8sdp">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/image" android:layout_width="@dimen/_90sdp" android:layout_height="@dimen/_120sdp" android:scaleType="centerCrop" app:riv_corner_radius="@dimen/_5sdp"/>
+        <LinearLayout android:background="@drawable/stories_gradient" android:layout_width="@dimen/_90sdp" android:layout_height="@dimen/_120sdp"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/title" android:padding="@dimen/_10sdp" android:layout_width="@dimen/_90sdp" android:layout_height="wrap_content" android:fontFamily="@font/pt_root_ui_bold"/>
+    </FrameLayout>
+</FrameLayout>

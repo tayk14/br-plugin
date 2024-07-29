@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/button_br_gray" android:layout_width="185dp" android:layout_height="80dp" android:layout_margin="2dp" android:weightSum="2">
+    <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/background_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/br_diner_ellipse"/>
+        <ImageView android:id="@+id/image_view_dinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" app:srcCompat="@drawable/br_diner_hotdog"/>
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="11sp" android:textColor="@color/orange" android:id="@+id/title_food_item" android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/muller_bold"/>
+        <TextView android:textSize="10sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_title_diner_satiety" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dinner_dialog_title_food_satiety" android:layout_below="@+id/title_food_item" android:fontFamily="@font/muller_bold"/>
+        <TextView android:textSize="10sp" android:textColor="@color/orange_bold_price" android:id="@+id/br_value_diner_satiety" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/br_title_diner_satiety" android:fontFamily="@font/muller_bold" android:layout_marginStart="5dp" android:layout_toEndOf="@+id/br_title_diner_satiety"/>
+        <TextView android:textSize="10sp" android:textColor="@color/common_signin_btn_dark_text_focused" android:id="@+id/br_title_diner_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dinner_dialog_title_food_price" android:layout_below="@+id/br_title_diner_satiety" android:fontFamily="@font/muller_bold"/>
+        <TextView android:textSize="10sp" android:textColor="@color/orange_bold_price" android:id="@+id/br_value_diner_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/br_title_diner_price" android:fontFamily="@font/muller_bold" android:layout_marginStart="5dp" android:layout_toEndOf="@+id/br_title_diner_price"/>
+    </RelativeLayout>
+</LinearLayout>

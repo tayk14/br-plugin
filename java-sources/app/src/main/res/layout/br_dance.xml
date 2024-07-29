@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentRight="false">
+    <RelativeLayout android:background="@drawable/background_br_dialog_black" android:layout_width="400dp" android:layout_height="40dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/br_dance_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Вы нашли Егора Шарова прямо на танцполе! Шок контент!" android:drawableLeft="@drawable/exclamation_mark2" android:drawablePadding="10dp" android:layout_centerInParent="true" android:fontFamily="@font/muller_bold"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/br_dance_time_frame" android:background="@drawable/background_br_dialog_black_down" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_dance_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Осталось: 55 сек" android:fontFamily="@font/muller_bold"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/br_dance_close" android:background="@drawable/br_gradient_left" android:layout_width="100dp" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="12sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Закрыть" android:fontFamily="@font/muller_bold"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/br_dance_left_up" android:background="@drawable/br_dance_item" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="20dp" android:layout_marginTop="60dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:alpha="0.8">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.8" app:srcCompat="@drawable/br_diner_ellipse"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="0.8" android:scaleY="0.8" app:srcCompat="@drawable/br_dance_arm"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/br_dance_mistakes" android:background="@drawable/background_br_input" android:layout_width="60dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:weightSum="2" android:layout_below="@+id/br_dance_left_up" android:layout_alignLeft="@+id/br_dance_left_up" android:layout_alignParentLeft="false" android:layout_alignParentTop="false">
+        <TextView android:textSize="10sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:background="@drawable/br_dance_header" android:layout_width="match_parent" android:layout_height="0px" android:text="Ошибок:" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+        <TextView android:textSize="10sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_dance_mistakes_text" android:layout_width="match_parent" android:layout_height="0px" android:text="12 455" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/br_dance_left_down" android:background="@drawable/br_dance_item" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="5dp" android:layout_below="@+id/br_dance_mistakes" android:layout_alignLeft="@+id/br_dance_left_up" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:alpha="0.8">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.8" app:srcCompat="@drawable/br_diner_ellipse"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="0.8" android:scaleY="0.8" app:srcCompat="@drawable/br_dance_leg"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/br_dance_bank" android:background="@drawable/background_br_input" android:layout_width="60dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:weightSum="2" android:layout_below="@+id/br_dance_right_up" android:layout_alignLeft="@+id/br_dance_right_up" android:layout_alignParentLeft="false" android:layout_alignParentTop="false">
+        <TextView android:textSize="10sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:background="@drawable/br_dance_header" android:layout_width="match_parent" android:layout_height="0px" android:text="В банке:" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+        <TextView android:textSize="10sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_dance_bank_text" android:layout_width="match_parent" android:layout_height="0px" android:text="4 321 321 ₽" android:layout_weight="1" android:fontFamily="@font/muller_bold"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/br_dance_right_down" android:background="@drawable/br_dance_item" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="5dp" android:layout_below="@+id/br_dance_bank" android:layout_alignLeft="@+id/br_dance_right_up" android:layout_alignParentLeft="false" android:layout_alignParentTop="false" android:alpha="0.8">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.8" app:srcCompat="@drawable/br_diner_ellipse"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="-0.8" android:scaleY="0.8" app:srcCompat="@drawable/br_dance_leg"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/br_dance_right_up" android:background="@drawable/br_dance_item" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="60dp" android:layout_marginRight="20dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:alpha="0.8">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.8" app:srcCompat="@drawable/br_diner_ellipse"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="-0.8" android:scaleY="0.8" app:srcCompat="@drawable/br_dance_arm"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/br_dance_scale_frame" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginBottom="5dp" android:layout_above="@+id/br_dance_time_frame" android:layout_alignLeft="@+id/br_dance_left_up" android:layout_alignRight="@+id/br_dance_right_up">
+        <FrameLayout android:layout_gravity="center" android:id="@+id/br_dance_bar_frame" android:background="@drawable/br_dance_barscale" android:layout_width="match_parent" android:layout_height="70dp">
+            <View android:background="@drawable/br_wires_line_gradient" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <View android:layout_gravity="bottom" android:background="@drawable/br_wires_line_gradient" android:layout_width="match_parent" android:layout_height="1dp"/>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/br_dance_active" android:background="@drawable/br_dance_oval_gray" android:layout_width="100dp" android:layout_height="match_parent" android:alpha="0.9">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.9" app:srcCompat="@drawable/br_diner_ellipse"/>
+            <ImageView android:id="@+id/br_dance_alimb" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="0.65" android:scaleY="0.65" app:srcCompat="@drawable/br_dance_arm"/>
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

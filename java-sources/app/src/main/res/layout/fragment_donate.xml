@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/_14sdp" android:paddingTop="@dimen/_18sdp" android:paddingRight="@dimen/_14sdp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:paddingBottom="@dimen/_40sdp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/_20sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate" android:fontFamily="@font/pt_root_ui_medium"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:text="@string/data" android:alpha="0.5" android:fontFamily="@font/pt_root_ui_medium"/>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/nik_rectangle2" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:padding="12dp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/user1"/>
+                <EditText android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:textColorHint="@color/menuTextDisable" android:id="@+id/nik" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/_10sdp" android:hint="@string/nik" android:singleLine="true" android:maxLength="20" android:digits="abcdefghijklmnopqrstuvwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ" android:layout_weight="1" android:inputType="textCapSentences" android:fontFamily="@font/pt_root_ui_regular"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/nik_rectangle2" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:padding="12dp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/email"/>
+                <EditText android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:textColorHint="@color/menuTextDisable" android:id="@+id/email" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/_10sdp" android:hint="@string/enterYourEmail" android:singleLine="true" android:maxLength="100" android:layout_weight="1" android:inputType="textEmailAddress" android:fontFamily="@font/pt_root_ui_regular"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/nik_rectangle2" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:padding="12dp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/ruble"/>
+                <EditText android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:textColorHint="@color/menuTextDisable" android:id="@+id/sum" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/_10sdp" android:hint="@string/enterSum" android:singleLine="true" android:maxLength="100" android:digits="1234567890" android:layout_weight="1" android:inputType="number" android:fontFamily="@font/pt_root_ui_regular"/>
+            </LinearLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_14sdp">
+                <FrameLayout android:id="@+id/chooseServer" android:background="@drawable/button_red_stroke_rectangle" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp">
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chooseServer" android:fontFamily="@font/pt_root_ui_medium"/>
+                        <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="@dimen/_16sdp" android:layout_marginLeft="@dimen/_3sdp" android:src="@drawable/red_arrow" android:adjustViewBounds="true"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/white" android:gravity="center" android:id="@+id/serverName" android:background="@drawable/button_red_stroke_rectangle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:text="RED" android:fontFamily="@font/montserrat_black"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:gravity="center" android:id="@+id/deposit" android:background="@drawable/button_red_rectangle" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/_14sdp" android:text="@string/deposit" android:fontFamily="@font/pt_root_ui_medium"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_14sdp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_rectangle_donate_block" android:padding="@dimen/_10sdp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/_5sdp" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/_50sdp" android:layout_height="wrap_content" android:src="@drawable/donate_power" android:adjustViewBounds="true"/>
+                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/donate_power" android:fontFamily="@font/pt_root_ui_bold"/>
+                        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/gradient1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_power_sum" android:fontFamily="@font/pt_root_ui_medium"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_rectangle_donate_block" android:padding="@dimen/_10sdp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_5sdp" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/_50sdp" android:layout_height="wrap_content" android:src="@drawable/donate_all_licenses" android:adjustViewBounds="true"/>
+                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/donate_all_licenses" android:fontFamily="@font/pt_root_ui_bold"/>
+                        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/gradient1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_all_licenses_sum" android:fontFamily="@font/pt_root_ui_medium"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_rectangle_donate_block" android:padding="@dimen/_10sdp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/_5sdp" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/_50sdp" android:layout_height="wrap_content" android:src="@drawable/donate_slot_auto" android:adjustViewBounds="true"/>
+                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/donate_slot_auto" android:fontFamily="@font/pt_root_ui_bold"/>
+                        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/gradient1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_slot_auto_sum" android:fontFamily="@font/pt_root_ui_medium"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_rectangle_donate_block" android:padding="@dimen/_10sdp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_5sdp" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/_50sdp" android:layout_height="wrap_content" android:src="@drawable/donate_family_name" android:adjustViewBounds="true"/>
+                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/donate_family_name" android:fontFamily="@font/pt_root_ui_bold"/>
+                        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/gradient1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_family_name_sum" android:fontFamily="@font/pt_root_ui_medium"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_rectangle_donate_block" android:padding="@dimen/_10sdp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/_5sdp" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/_50sdp" android:layout_height="wrap_content" android:src="@drawable/donate_warning" android:adjustViewBounds="true"/>
+                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/donate_warning" android:fontFamily="@font/pt_root_ui_bold"/>
+                        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/gradient1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_warning_sum" android:fontFamily="@font/pt_root_ui_medium"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_rectangle_donate_block" android:padding="@dimen/_10sdp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_5sdp" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/_50sdp" android:layout_height="wrap_content" android:src="@drawable/donate_transfer_family" android:adjustViewBounds="true"/>
+                        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/donate_transfer_family" android:fontFamily="@font/pt_root_ui_bold"/>
+                        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/gradient1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_transfer_family_sum" android:fontFamily="@font/pt_root_ui_medium"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <LinearLayout android:background="@drawable/rounded_rectangle_donate_silver" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.4"/>
+                    <LinearLayout android:orientation="horizontal" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textSize="@dimen/_22sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/donate_silver_vip" android:fontFamily="@font/pt_root_ui_bold"/>
+                            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/gradient1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_silver_vip_sum" android:fontFamily="@font/pt_root_ui_medium"/>
+                            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/gradient1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_per_month" android:fontFamily="@font/pt_root_ui_medium"/>
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/_60sdp" android:layout_height="wrap_content" android:src="@drawable/crown_silver" android:adjustViewBounds="true"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <LinearLayout android:background="@drawable/rounded_rectangle_donate_gold" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.4"/>
+                    <LinearLayout android:orientation="horizontal" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textSize="@dimen/_22sdp" android:textColor="@color/gold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/donate_gold_vip" android:fontFamily="@font/pt_root_ui_bold"/>
+                            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/gradient1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_gold_vip_sum" android:fontFamily="@font/pt_root_ui_medium"/>
+                            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/gradient1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_per_month" android:fontFamily="@font/pt_root_ui_medium"/>
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/_60sdp" android:layout_height="wrap_content" android:src="@drawable/crown_gold" android:adjustViewBounds="true"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <LinearLayout android:background="@drawable/rounded_rectangle_donate_platinum" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.4"/>
+                    <LinearLayout android:orientation="horizontal" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textSize="@dimen/_22sdp" android:textColor="@color/platinum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/donate_platinum_vip" android:fontFamily="@font/pt_root_ui_bold"/>
+                            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/gradient1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_platinum_vip_sum" android:fontFamily="@font/pt_root_ui_medium"/>
+                            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/gradient1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donate_per_month" android:fontFamily="@font/pt_root_ui_medium"/>
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/_60sdp" android:layout_height="wrap_content" android:src="@drawable/crown_platinum" android:adjustViewBounds="true"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

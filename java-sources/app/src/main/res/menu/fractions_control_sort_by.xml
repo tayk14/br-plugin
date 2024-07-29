@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_sort_only_online" android:title="@string/fractions_control_sort_by_only_online"/>
+    <item android:id="@+id/menu_sort_only_offline" android:title="@string/fractions_control_sort_by_only_offline"/>
+    <item android:enabled="true" android:id="@+id/menu_sort_rank_ascending" android:checked="true" android:title="@string/fractions_control_sort_by_rank_ascending" android:checkable="true"/>
+    <item android:id="@+id/menu_sort_rank_descending" android:title="@string/fractions_control_sort_by_rank_descending"/>
+</menu>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/br_pipes_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="4" android:layout_centerInParent="false">
+    <LinearLayout android:orientation="vertical" android:background="#4d151515" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+        <FrameLayout android:background="@drawable/background_br_header" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textSize="14sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/textView5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ИНФОРМАЦИЯ" android:fontFamily="@font/muller_bold"/>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/br_pipes_dir" android:background="@drawable/br_pipes_item" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="30dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/imageView19" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="0.6" android:scaleY="0.6" app:srcCompat="@drawable/br_pipes_direct"/>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/br_pipes_ang" android:background="@drawable/br_pipes_item" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="10dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="0.4" android:scaleY="0.4" app:srcCompat="@drawable/br_pipes_angle"/>
+        </FrameLayout>
+        <View android:id="@+id/view" android:background="@drawable/br_wires_line_gradient" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp"/>
+        <Button android:textSize="12sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/br_pipes_help" android:background="@drawable/br_wires_help_rect" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginLeft="30dp" android:layout_marginTop="20dp" android:layout_marginRight="30dp" android:text="Помощь" android:textAllCaps="false" android:drawableStart="@drawable/help_icon" android:fontFamily="@font/muller_bold"/>
+        <Button android:textSize="12sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/br_pipes_exit" android:background="@drawable/button_br_red_unfilled" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginLeft="30dp" android:layout_marginTop="10dp" android:layout_marginRight="30dp" android:text="Выйти" android:drawableLeft="@drawable/logout_icon" android:textAllCaps="false" android:fontFamily="@font/muller_bold"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="3">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="10dp">
+            <TextView android:textSize="12sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/br_pipes_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Правильно соедините трубы" android:drawableLeft="@drawable/exclamation_mark2" android:drawablePadding="5dp" android:layout_centerInParent="true" android:fontFamily="@font/muller_bold"/>
+        </RelativeLayout>
+        <TableLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:background="@drawable/br_pipes_item_white" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="0.9" android:scaleY="0.9" app:srcCompat="@drawable/br_pipes_start"/>
+                </FrameLayout>
+                <RelativeLayout android:id="@+id/br_pipes_0" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/br_pipes_14" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView37" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.8" android:scaleY="0.8" android:rotation="90"/>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/br_pipes_1" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView23" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.8" android:scaleY="0.8"/>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/br_pipes_13" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.8" android:scaleY="0.8" android:rotation="90"/>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/br_pipes_9" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView33" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.6" android:scaleY="0.6" android:rotation="0"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/br_pipes_10" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView36" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.8" android:scaleY="0.8" android:rotation="0"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/br_pipes_11" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView20" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/br_pipes_2" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView26" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.8" android:scaleY="0.8" android:rotation="90"/>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/br_pipes_6" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView29" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.6" android:scaleY="0.6" android:rotation="0"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/br_pipes_7" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView35" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.8" android:scaleY="0.8" android:rotation="0"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/br_pipes_8" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView30" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.6" android:scaleY="0.6" android:rotation="180"/>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/br_pipes_12" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView32" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.6" android:scaleY="0.6" android:rotation="270"/>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/br_pipes_item_white" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:scaleX="0.9" android:scaleY="0.9" app:srcCompat="@drawable/br_pipes_finish"/>
+                </FrameLayout>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/br_pipes_3" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView27" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.6" android:scaleY="0.6" android:rotation="270"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/br_pipes_4" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView34" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.8" android:scaleY="0.8" android:rotation="0"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/br_pipes_5" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView28" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.6" android:scaleY="0.6" android:rotation="180"/>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/br_pipes_18" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView45" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.6" android:scaleY="0.6" android:rotation="0"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/br_pipes_19" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView41" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.8" android:scaleY="0.8" android:rotation="0"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/br_pipes_20" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView42" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.8" android:scaleY="0.8" android:rotation="0"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/br_pipes_21" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView46" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.6" android:scaleY="0.6" android:rotation="90"/>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/br_pipes_15" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView40" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.8" android:scaleY="0.8" android:rotation="0"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/br_pipes_16" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView39" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.8" android:scaleY="0.8" android:rotation="0"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/br_pipes_17" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView44" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.6" android:scaleY="0.6" android:rotation="180"/>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/br_pipes_22" android:background="@drawable/br_pipes_item" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView43" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleX="0.8" android:scaleY="0.8" android:rotation="90"/>
+                </RelativeLayout>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+                <FrameLayout android:background="@drawable/br_pipes_item" android:visibility="invisible" android:layout_width="20dp" android:layout_height="46dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

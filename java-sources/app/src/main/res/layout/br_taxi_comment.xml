@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/br_dark_shape" android:layout_width="200dp" android:layout_height="wrap_content" app:layout_gravity="center">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+        <TextView android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/br_taxi_comment_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Комментарий" android:layout_centerInParent="true"/>
+        <Button android:id="@+id/br_taxi_comment_close" android:background="@drawable/br_close_red" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:background="@drawable/br_taxi_border_gradient" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp">
+        <TextView android:textSize="12sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/br_taxi_comment_comm" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Выполнить важные задания по разработке экспериментов, поражающих по своей масштабности и грандиозности." android:fontFamily="@font/muller_bold"/>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#38383d"/>
+            <corners android:bottomRightRadius="5dp"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="26dp" android:width="26dp" android:drawable="@drawable/br_donate_plus"/>
+</layer-list>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="15dp" android:width="15dp" android:drawable="@drawable/inv_icon_change_list_by_exchange_res"/>
+</layer-list>

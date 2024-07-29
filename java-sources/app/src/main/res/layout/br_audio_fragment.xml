@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp">
+    <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/background_br_dialog" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="5dp" android:weightSum="1">
+                <TextView android:textSize="10sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="start|center_vertical" android:layout_gravity="center_vertical" android:id="@+id/textView6" android:paddingLeft="5dp" android:layout_width="0px" android:layout_height="wrap_content" android:text="Просто нажмите PLAY для прослушивания" android:lines="1" android:layout_weight="0.55" android:fontFamily="@font/muller_bold"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/br_audio_search_layout" android:layout_width="0px" android:layout_height="match_parent" android:weightSum="10" android:layout_weight="0.45">
+                    <EditText android:textSize="10sp" android:textColor="#ffffffff" android:textColorHint="#88888888" android:gravity="center_vertical" android:id="@+id/br_audio_search" android:background="@drawable/br_audio_line" android:paddingLeft="10dp" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:hint="Поиск..." android:ems="10" android:layout_weight="8" android:inputType="textPersonName" android:imeOptions="flagNoExtractUi|flagNoFullscreen|actionDone" android:fontFamily="@font/muller_regular"/>
+                    <FrameLayout android:id="@+id/br_audio_search_but" android:background="@drawable/br_audio_endline" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="2">
+                        <ImageView android:layout_gravity="center" android:id="@+id/imageView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="0.6" android:scaleY="0.6" app:srcCompat="@drawable/br_audio_loupe"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:id="@+id/view2" android:background="#ffff6318" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/br_audio_current" android:background="@drawable/br_rent_but" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="34dp" android:weightSum="10">
+                <TextView android:textColor="@color/common_signin_btn_dark_text_default" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/br_audio_current_name" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="0px" android:layout_height="wrap_content" android:text="Исполнитель - Песня " android:lines="1" android:scrollHorizontally="true" android:layout_weight="8" android:fontFamily="@font/muller_bold"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/br_audio_current_exp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:scaleY="1" app:srcCompat="@drawable/br_audio_exp"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/br_audio_current_but" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:scaleX="0.4" android:scaleY="0.4" app:srcCompat="@drawable/br_audio_stop"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/br_audio_elem_0" android:background="@drawable/background_br_dialog_updown" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="8dp" android:weightSum="10">
+                <TextView android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/br_audio_name_0" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="0px" android:layout_height="wrap_content" android:text="Исполнитель - Название" android:lines="1" android:scrollHorizontally="true" android:layout_weight="8" android:fontFamily="@font/muller_bold"/>
+                <FrameLayout android:id="@+id/br_audio_frame_0" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/br_audio_price_0" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500 ₽" android:fontFamily="@font/muller_bold"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/br_audio_but_0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:scaleX="0.5" android:scaleY="0.5" app:srcCompat="@drawable/br_audio_pause2"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/br_audio_download_0" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1" android:scaleX="0.6" android:scaleY="0.6" app:srcCompat="@drawable/br_audio_download"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/br_audio_elem_1" android:background="@drawable/background_br_dialog_updown" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="8dp" android:weightSum="10">
+                <TextView android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/br_audio_name_1" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="0px" android:layout_height="wrap_content" android:text="Исполнитель - Название" android:lines="1" android:scrollHorizontally="true" android:layout_weight="8" android:fontFamily="@font/muller_bold"/>
+                <FrameLayout android:id="@+id/br_audio_frame_1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/br_audio_price_1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500 ₽" android:fontFamily="@font/muller_bold"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/br_audio_but_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:scaleX="0.5" android:scaleY="0.5" app:srcCompat="@drawable/br_audio_pause2"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/br_audio_download_1" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1" android:scaleX="0.6" android:scaleY="0.6" app:srcCompat="@drawable/br_audio_download"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/br_audio_elem_2" android:background="@drawable/background_br_dialog_updown" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="8dp" android:weightSum="10">
+                <TextView android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/br_audio_name_2" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="0px" android:layout_height="wrap_content" android:text="Исполнитель - Название" android:lines="1" android:scrollHorizontally="true" android:layout_weight="8" android:fontFamily="@font/muller_bold"/>
+                <FrameLayout android:id="@+id/br_audio_frame_2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/br_audio_price_2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500 ₽" android:fontFamily="@font/muller_bold"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/br_audio_but_2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:scaleX="0.5" android:scaleY="0.5" app:srcCompat="@drawable/br_audio_pause2"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/br_audio_download_2" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1" android:scaleX="0.6" android:scaleY="0.6" app:srcCompat="@drawable/br_audio_download"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/br_audio_elem_3" android:background="@drawable/background_br_dialog_updown" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="8dp" android:weightSum="10">
+                <TextView android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/br_audio_name_3" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="0px" android:layout_height="wrap_content" android:text="Исполнитель - Название" android:lines="1" android:scrollHorizontally="true" android:layout_weight="8" android:fontFamily="@font/muller_bold"/>
+                <FrameLayout android:id="@+id/br_audio_frame_3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/br_audio_price_3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500 ₽" android:fontFamily="@font/muller_bold"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/br_audio_but_3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:scaleX="0.5" android:scaleY="0.5" app:srcCompat="@drawable/br_audio_pause2"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/br_audio_download_3" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1" android:scaleX="0.6" android:scaleY="0.6" app:srcCompat="@drawable/br_audio_download"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginTop="10dp">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <Button android:textSize="14sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_audio_back" android:background="@drawable/button_red_rectangle" android:layout_width="120dp" android:layout_height="match_parent" android:text="Назад" android:textAllCaps="false" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <FrameLayout android:background="@drawable/background_br_dialog_updown" android:layout_width="100dp" android:layout_height="match_parent">
+                    <TextView android:textSize="10sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/br_audio_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Страница 1" android:fontFamily="@font/muller_bold"/>
+                </FrameLayout>
+                <Button android:id="@+id/br_audio_left_arrow" android:background="@drawable/br_audio_arrow" android:layout_width="50dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:scaleX="-1"/>
+                <Button android:id="@+id/br_audio_right_arrow" android:background="@drawable/br_audio_arrow" android:layout_width="50dp" android:layout_height="match_parent" android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

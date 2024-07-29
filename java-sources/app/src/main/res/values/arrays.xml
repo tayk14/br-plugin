@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="fractions_army_staff_array">
+        <item>Рядовой</item>
+        <item>Ефрейтор</item>
+        <item>Сержант</item>
+        <item>Старшина</item>
+        <item>Прапорщик</item>
+        <item>Лейтенант</item>
+        <item>Капитан</item>
+        <item>Майор</item>
+        <item>Подполковник</item>
+        <item>Полковник</item>
+    </array>
+    <array name="fractions_government_staff_array">
+        <item>Водитель</item>
+        <item>Охранник</item>
+        <item>Начальник охраны</item>
+        <item>Секретарь</item>
+        <item>Советник</item>
+        <item>Лицензер</item>
+        <item>Адвокат</item>
+        <item>Депутат</item>
+        <item>Вице-губернатор</item>
+        <item>Губернатор</item>
+    </array>
+    <array name="fractions_hospital_staff_array">
+        <item>Интерн</item>
+        <item>Парамедик</item>
+        <item>Фельдшер</item>
+        <item>Нарколог</item>
+        <item>Педиатр</item>
+        <item>Терапевт</item>
+        <item>Травматолог</item>
+        <item>Хирург</item>
+        <item>Заведующий</item>
+        <item>Глав. врач</item>
+    </array>
+    <array name="fractions_mass_media_staff_array">
+        <item>Практикант</item>
+        <item>Фотограф</item>
+        <item>Журналист</item>
+        <item>Корреспондент</item>
+        <item>Ведущий</item>
+        <item>Редактор</item>
+        <item>Маркетолог</item>
+        <item>Менеджер</item>
+        <item>Продюсер</item>
+        <item>Директор</item>
+    </array>
+</resources>

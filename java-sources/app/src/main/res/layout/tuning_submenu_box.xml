@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#b0151221" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2">
+    <Button android:id="@+id/button_exit_card_view" android:background="@drawable/exit" android:layout_width="45dp" android:layout_height="45dp" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/view_box_buying" android:background="@drawable/tuning_bg_box_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/left_block" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/tuning_title_box" android:textAllCaps="true"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/name_this_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true"/>
+            <ImageView android:layout_width="110dp" android:layout_height="110dp" android:layout_marginTop="40dp" android:layout_marginBottom="40dp" android:src="@drawable/tuning_icon_box"/>
+            <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/tuning_button_open" android:textAllCaps="true"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/tuning_price_box" android:background="@drawable/tuning_bg_button_back" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+                <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/tuning_value_price_box" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintEnd_toStartOf="@+id/tuning_currency_box" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="@+id/tuning_price_box"/>
+                <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/tuning_currency_box" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="5dp" app:layout_constraintEnd_toEndOf="@+id/tuning_price_box" app:layout_constraintStart_toEndOf="@+id/tuning_value_price_box"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/right_block" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45dp" android:text="@string/tuning_title_box_content" android:textAllCaps="true"/>
+            <RelativeLayout android:background="@drawable/tuning_bg_seekbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="45dp" android:layout_marginStart="20dp" android:layout_marginEnd="30dp">
+                <androidx.recyclerview.widget.RecyclerView android:scrollbarThumbVertical="@drawable/tuning_scroll_submenu_thumb" android:scrollbarTrackVertical="@drawable/tuning_scroll_track_submenu_box" android:id="@+id/recv_box_items" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="5dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/block_open_cards" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/bg_box_open_card" android:background="@drawable/tuning_bg_box_card_invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/title_this_box_window" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/tuning_title_box"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/title_check_box_invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/title_this_box_window" android:textAllCaps="true"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/box_card_invisible" android:layout_width="220dp" android:layout_height="280dp" android:layout_below="@+id/title_check_box_invisible" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/icon_card_invisible" android:layout_width="220dp" android:layout_height="280dp" android:src="@drawable/tuning_image_box_card"/>
+            <TextView android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:text="@string/tuning_action_open_card" android:layout_alignBottom="@+id/icon_card_invisible" android:textAllCaps="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/box_card_visible" android:visibility="invisible" android:layout_width="220dp" android:layout_height="280dp" android:layout_below="@+id/title_check_box_invisible" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/icon_card_visible" android:layout_width="220dp" android:layout_height="280dp" android:src="@drawable/tuning_image_box_card_visible"/>
+            <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/name_detail_in_box" android:layout_width="150dp" android:layout_height="wrap_content" android:layout_marginBottom="55dp" android:layout_alignBottom="@+id/icon_card_visible" android:layout_centerHorizontal="true" android:textAllCaps="true"/>
+            <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/type_detail_in_box" android:layout_width="150dp" android:layout_height="wrap_content" android:layout_marginBottom="35dp" android:layout_alignBottom="@+id/icon_card_visible" android:layout_centerHorizontal="true" android:textAllCaps="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

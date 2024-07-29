@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_14sdp" android:layout_marginRight="@dimen/_14sdp" android:layout_marginBottom="@dimen/_10sdp">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/server_rectangle" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.1"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/backColor" android:background="@drawable/server_rectangle" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.1"/>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/_10sdp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp" android:layout_marginRight="@dimen/_16sdp">
+            <com.dinuscxj.progressbar.CircleProgressBar android:id="@+id/progressBar" android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp" android:layout_centerInParent="true" app:drawBackgroundOutsideProgress="true" app:progress_background_color="@color/white6" app:progress_end_color="@color/blue" app:progress_shader="linear" app:progress_start_color="@color/blue" app:progress_start_degree="-90" app:progress_stroke_cap="square" app:progress_stroke_width="@dimen/_5sdp" app:progress_style="solid_line" app:progress_text_color="@color/transparent"/>
+            <ImageView android:id="@+id/bearPaw" android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp" android:src="@drawable/bear_paw"/>
+            <ImageView android:layout_gravity="bottom|right" android:id="@+id/x2" android:layout_width="wrap_content" android:layout_height="@dimen/_10sdp" android:layout_marginRight="@dimen/_minus5sdp" android:src="@drawable/x2" android:adjustViewBounds="true"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/white" android:id="@+id/firstName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Сервер" android:fontFamily="@font/montserrat_black"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:id="@+id/secondName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:text="Сервер" android:fontFamily="@font/pt_root_ui_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/people" android:layout_width="wrap_content" android:layout_height="@dimen/_12sdp" android:src="@drawable/people" android:adjustViewBounds="true"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:id="@+id/online" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:text="500" android:fontFamily="@font/pt_root_ui_bold"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:id="@+id/onlineTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_total" android:alpha="0.5" android:fontFamily="@font/pt_root_ui_regular"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

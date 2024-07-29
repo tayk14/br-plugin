@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.1.2" type="baseline" client="gradle" dependencies="false" name="AGP (7.1.2)" variant="fatal" version="7.1.2">
+
+    <issue
+        id="ResourceCycle"
+        message="Potential cycle: `Base.V14.Theme.MaterialComponents` is the implied parent of `Base.V14.Theme.MaterialComponents.Bridge` and this defines the opposite"
+        errorLine1="    &lt;style name=&quot;Base.V14.Theme.MaterialComponents&quot; parent=&quot;@style/Base.V14.Theme.MaterialComponents.Bridge&quot;>"
+        errorLine2="                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="492"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="ResourceCycle"
+        message="Potential cycle: `Base.V14.Theme.MaterialComponents.Dialog` is the implied parent of `Base.V14.Theme.MaterialComponents.Dialog.Bridge` and this defines the opposite"
+        errorLine1="    &lt;style name=&quot;Base.V14.Theme.MaterialComponents.Dialog&quot; parent=&quot;@style/Base.V14.Theme.MaterialComponents.Dialog.Bridge&quot;>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="593"
+            column="60"/>
+    </issue>
+
+    <issue
+        id="ResourceCycle"
+        message="Potential cycle: `Base.V14.Theme.MaterialComponents.Light` is the implied parent of `Base.V14.Theme.MaterialComponents.Light.Bridge` and this defines the opposite"
+        errorLine1="    &lt;style name=&quot;Base.V14.Theme.MaterialComponents.Light&quot; parent=&quot;@style/Base.V14.Theme.MaterialComponents.Light.Bridge&quot;>"
+        errorLine2="                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="687"
+            column="59"/>
+    </issue>
+
+    <issue
+        id="ResourceCycle"
+        message="Potential cycle: `Base.V14.Theme.MaterialComponents.Light.Dialog` is the implied parent of `Base.V14.Theme.MaterialComponents.Light.Dialog.Bridge` and this defines the opposite"
+        errorLine1="    &lt;style name=&quot;Base.V14.Theme.MaterialComponents.Light.Dialog&quot; parent=&quot;@style/Base.V14.Theme.MaterialComponents.Light.Dialog.Bridge&quot;>"
+        errorLine2="                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="833"
+            column="66"/>
+    </issue>
+
+    <issue
+        id="ResourceCycle"
+        message="Potential cycle: `Base.Widget.AppCompat.DrawerArrowToggle` is the implied parent of `Base.Widget.AppCompat.DrawerArrowToggle.Common` and this defines the opposite"
+        errorLine1="    &lt;style name=&quot;Base.Widget.AppCompat.DrawerArrowToggle&quot; parent=&quot;@style/Base.Widget.AppCompat.DrawerArrowToggle.Common&quot;>"
+        errorLine2="                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="1428"
+            column="59"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/image`, already defined earlier in this layout"
+        errorLine1="        &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/image&quot; android:layout_width=&quot;32dp&quot; android:layout_height=&quot;32dp&quot; android:scaleType=&quot;fitCenter&quot; android:adjustViewBounds=&quot;true&quot;/>"
+        errorLine2="                                                   ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/abc_activity_chooser_view.xml"
+            line="7"
+            column="52"/>
+        <location
+            file="src/main/res/layout/abc_activity_chooser_view.xml"
+            line="4"
+            column="52"
+            message="Duplicate id `@+id/image` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="105"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="109"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="113"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="117"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="121"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="125"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="129"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="133"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="137"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="141"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="147"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="151"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="155"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="159"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="163"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="167"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="171"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="175"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="179"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/imageView8`, already defined earlier in this layout"
+        errorLine1="                &lt;ImageView android:layout_gravity=&quot;center&quot; android:id=&quot;@+id/imageView8&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:layout_marginLeft=&quot;8dp&quot; android:layout_marginRight=&quot;8dp&quot; app:srcCompat=&quot;@drawable/br_hack_key&quot;/>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="183"
+            column="60"/>
+        <location
+            file="src/main/res/layout/br_hack.xml"
+            line="96"
+            column="64"
+            message="Duplicate id `@+id/imageView8` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/textView3`, already defined earlier in this layout"
+        errorLine1="                &lt;TextView android:textSize=&quot;18sp&quot; android:textColor=&quot;@color/common_signin_btn_dark_text_default&quot; android:gravity=&quot;center&quot; android:id=&quot;@+id/textView3&quot; android:background=&quot;@drawable/br_silver_header&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;в ячейке&quot; android:fontFamily=&quot;@font/muller_bold&quot;/>"
+        errorLine2="                                                                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/br_robbery.xml"
+            line="19"
+            column="139"/>
+        <location
+            file="src/main/res/layout/br_robbery.xml"
+            line="10"
+            column="139"
+            message="Duplicate id `@+id/textView3` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/downloaderDashboard`, already defined earlier in this layout"
+        errorLine1="            &lt;LinearLayout android:orientation=&quot;horizontal&quot; android:id=&quot;@+id/downloaderDashboard&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot;>"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/download.xml"
+            line="13"
+            column="60"/>
+        <location
+            file="src/main/res/layout/download.xml"
+            line="5"
+            column="54"
+            message="Duplicate id `@+id/downloaderDashboard` originally defined here"/>
+    </issue>
+
+    <issue
+        id="ExpiredTargetSdkVersion"
+        message="Google Play requires that apps target API level 30 or higher.&#xA;"
+        errorLine1="        targetSdkVersion 28"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle"
+            line="24"
+            column="9"/>
+    </issue>
+
+</issues>

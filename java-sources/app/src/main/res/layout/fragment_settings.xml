@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/_14sdp" android:paddingTop="@dimen/_18sdp" android:paddingRight="@dimen/_14sdp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:paddingBottom="@dimen/_40sdp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/_20sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_title" android:fontFamily="@font/pt_root_ui_medium"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/blue" android:id="@+id/privacyPolicy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:text="@string/privacyPolicy3" android:fontFamily="@font/pt_root_ui_bold"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:text="@string/your_nik" android:alpha="0.5" android:fontFamily="@font/pt_root_ui_medium"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/changeNik" android:background="@drawable/nik_rectangle2" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:padding="12dp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/user1"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/nikText" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/_10sdp" android:text="@string/nik" android:maxLines="1" android:layout_weight="1" android:fontFamily="@font/pt_root_ui_regular"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_minus10sdp" android:text="@string/get_notification" android:layout_weight="1" android:fontFamily="@font/pt_root_ui_bold"/>
+                <ToggleButton android:id="@+id/notification" android:background="@drawable/toggle_selector" android:layout_width="@dimen/_80sdp" android:layout_height="@dimen/_60sdp" android:layout_marginRight="@dimen/_minus20sdp" android:checked="true" android:textOn="" android:textOff=""/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:gravity="center" android:id="@+id/resetSettings" android:background="@drawable/button_red_stroke_rectangle" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:text="@string/resetSettings" android:fontFamily="@font/pt_root_ui_medium"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:gravity="center" android:id="@+id/reinstallGame" android:background="@drawable/button_red_rectangle" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:layout_marginTop="@dimen/_10sdp" android:text="@string/reinstallGame" android:fontFamily="@font/pt_root_ui_medium"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp">
+                <ImageView android:id="@+id/telegramButton" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/telegram"/>
+                <Space android:layout_width="@dimen/_20sdp" android:layout_height="wrap_content"/>
+                <ImageView android:id="@+id/vkButton" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/vk"/>
+                <Space android:layout_width="@dimen/_20sdp" android:layout_height="wrap_content"/>
+                <ImageView android:id="@+id/discordButton" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/discord"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

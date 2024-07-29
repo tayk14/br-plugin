@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/donate_tile_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_marginBottom="40dp" android:layout_weight="1">
+        <TextView android:textSize="20sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/textView30" android:background="@drawable/donate_tile_header_yellow" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Супер предложения" android:textAllCaps="true" android:fontFamily="@font/muller_bold"/>
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarThumbVertical="@drawable/br_dialog_scroll_yellow_thumb" android:scrollbarTrackVertical="@drawable/br_dialog_scroll_yellow_track" android:scrollbarStyle="outsideInset" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/donate_tile_background" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:id="@+id/textView33" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Купить BLACK COINS" android:textAllCaps="true"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

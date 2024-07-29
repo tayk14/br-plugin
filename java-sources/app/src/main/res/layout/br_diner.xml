@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/background_br_dialog_updown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="50dp">
+    <RelativeLayout android:background="@drawable/br_diner_header" android:layout_width="match_parent" android:layout_height="30dp">
+        <TextView android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="Меню ларька" android:fontFamily="@font/muller_bold"/>
+        <Button android:id="@+id/close_button" android:background="@drawable/br_diner_close" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="5dp" android:layout_marginRight="25dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="80dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="5dp" android:weightSum="3">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/br_diner_hotdog" android:background="@drawable/button_br_gray" android:layout_width="0px" android:layout_height="match_parent" android:layout_marginLeft="2.5dp" android:layout_marginRight="2.5dp" android:weightSum="2" android:layout_weight="1">
+            <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/br_diner_ellipse"/>
+                <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" app:srcCompat="@drawable/br_diner_hotdog"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="9sp" android:textColor="@color/orange" android:id="@+id/textView9" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Хот-дог" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_focused" android:id="@+id/br_diner_price_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Стоимость:" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_diner_satiety_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Сытость:" android:fontFamily="@font/muller_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/br_diner_cheburek" android:background="@drawable/button_br_gray" android:layout_width="0px" android:layout_height="match_parent" android:layout_marginLeft="2.5dp" android:layout_marginRight="2.5dp" android:weightSum="2" android:layout_weight="1">
+            <FrameLayout android:background="@drawable/br_diner_ellipse" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" app:srcCompat="@drawable/br_diner_cheburek"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="9sp" android:textColor="@color/orange" android:id="@+id/textView13" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Чебурек" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_diner_price_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Стоимость:" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_diner_satiety_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Сытость:" android:fontFamily="@font/muller_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/br_diner_pie" android:background="@drawable/button_br_gray" android:layout_width="0px" android:layout_height="match_parent" android:layout_marginLeft="2.5dp" android:layout_marginRight="2.5dp" android:weightSum="2" android:layout_weight="1">
+            <FrameLayout android:background="@drawable/br_diner_ellipse" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" app:srcCompat="@drawable/br_diner_pie"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="9sp" android:textColor="@color/orange" android:id="@+id/textView19" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Пирожок" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_diner_price_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Стоимость:" android:fontFamily="@font/montserrat_bold"/>
+                <TextView android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_diner_satiety_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Сытость:" android:fontFamily="@font/muller_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="80dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/br_diner_sausage" android:background="@drawable/button_br_gray" android:layout_width="0px" android:layout_height="match_parent" android:layout_marginLeft="2.5dp" android:layout_marginRight="2.5dp" android:weightSum="2" android:layout_weight="1">
+            <FrameLayout android:background="@drawable/br_diner_ellipse" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" app:srcCompat="@drawable/br_diner_sausage"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="9sp" android:textColor="@color/orange" android:id="@+id/textView22" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Сосиска в тесте" android:fontFamily="@font/montserrat_bold"/>
+                <TextView android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_diner_price_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Стоимость:" android:fontFamily="@font/montserrat_bold"/>
+                <TextView android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_diner_satiety_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Сытость:" android:fontFamily="@font/muller_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/br_diner_coffee" android:background="@drawable/button_br_gray" android:layout_width="0px" android:layout_height="match_parent" android:layout_marginLeft="2.5dp" android:layout_marginRight="2.5dp" android:weightSum="2" android:layout_weight="1">
+            <FrameLayout android:background="@drawable/br_diner_ellipse" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" app:srcCompat="@drawable/br_diner_coffe"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="9sp" android:textColor="@color/orange" android:id="@+id/textView25" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Кофе" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_diner_price_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Стоимость:" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_diner_satiety_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Сытость:" android:fontFamily="@font/muller_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/br_diner_tea" android:background="@drawable/button_br_gray" android:layout_width="0px" android:layout_height="match_parent" android:layout_marginLeft="2.5dp" android:layout_marginRight="2.5dp" android:weightSum="2" android:layout_weight="1">
+            <FrameLayout android:background="@drawable/br_diner_ellipse" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/imageView7" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/br_diner_tea"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="9sp" android:textColor="@color/orange" android:id="@+id/textView28" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Чай" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_diner_price_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Стоимость:" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/br_diner_satiety_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Сытость:" android:fontFamily="@font/muller_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginLeft="20dp" android:layout_marginTop="14dp" android:layout_marginRight="20dp" android:layout_marginBottom="16dp" android:weightSum="5">
+        <FrameLayout android:background="@drawable/br_diner_line" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="3.3">
+            <TextView android:textSize="15sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/br_diner_price_sum" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Общая стоимость:" android:fontFamily="@font/muller_bold"/>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/br_diner_purchace_button" android:background="@drawable/br_rent_but" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="2.5dp" android:layout_weight="1.7" android:alpha="0.5">
+            <TextView android:textSize="15sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Купить" android:drawableLeft="@drawable/br_diner_purchase_icon" android:drawablePadding="10dp" android:layout_centerInParent="true" android:fontFamily="@font/muller_bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

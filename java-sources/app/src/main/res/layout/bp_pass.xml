@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bp_back_blue" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="6dp" android:weightSum="4.4" android:layout_weight="1">
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bp_gradient_blue" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/textView52" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50dp" android:text="Black Pass" android:fontFamily="@font/muller_regular" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.51" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <TextView android:textSize="14sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/textView55" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="PREMIUM" android:fontFamily="@font/muller_bold" app:layout_constraintEnd_toEndOf="@+id/textView52" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="@+id/textView52" app:layout_constraintTop_toBottomOf="@+id/textView52"/>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+                    <Button android:textSize="10sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/bp_pass_premium_butt" android:background="@drawable/donate_tile_button" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="25dp" android:text="Активировать" android:fontFamily="@font/muller_bold"/>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/bp_pass_act" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="20dp" android:layout_height="20dp" android:layout_weight="1" app:srcCompat="@drawable/bp_check"/>
+                        <TextView android:textColor="@color/common_signin_btn_dark_text_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Активен" android:layout_weight="1" android:fontFamily="@font/muller_regular"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bp_back_blue" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp" android:weightSum="4.4" android:layout_weight="1">
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bp_gradient_blue" android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/textView53" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50dp" android:text="Black Pass" android:fontFamily="@font/muller_regular" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.51" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+                <TextView android:textSize="14sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="STANDART" android:fontFamily="@font/muller_bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.505" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView53"/>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+                    <Button android:textSize="10sp" android:textColor="@color/common_signin_btn_dark_text_default" android:background="@drawable/donate_tile_button" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="25dp" android:text="Активировать" android:fontFamily="@font/muller_bold"/>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="20dp" android:layout_height="20dp" android:layout_weight="1" app:srcCompat="@drawable/bp_check"/>
+                        <TextView android:textColor="@color/common_signin_btn_dark_text_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Активен" android:layout_weight="1" android:fontFamily="@font/muller_regular"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="4.4">
+        <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="3.4">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@+id/bp_pass_RV" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@+id/bp_pass_levelprice_RV" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

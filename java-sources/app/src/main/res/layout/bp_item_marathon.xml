@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="100dp" android:layout_height="130dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/bp_item_gradient" android:layout_width="80dp" android:layout_height="70dp">
+            <ImageView android:id="@+id/bp_imarathon_img" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/back2"/>
+            <ImageView android:layout_gravity="top|right" android:id="@+id/bp_imarathon_check" android:layout_width="15dp" android:layout_height="15dp" app:srcCompat="@drawable/bp_check"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <Button android:textSize="8sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/bp_imarathon_butt" android:background="@drawable/donate_tile_button" android:paddingLeft="2dp" android:paddingRight="2dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="18dp" android:text="получить 1.500 ₽" android:fontFamily="@font/muller_bold"/>
+            <TextView android:textSize="10sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/bp_imarathon_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.500 ₽" android:fontFamily="@font/muller_bold"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="12dp">
+            <View android:id="@+id/bp_imarathon_prev_line" android:background="@drawable/yellow_gradient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <View android:id="@+id/bp_imarathon_next_line" android:background="@drawable/yellow_gradient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/bp_imarathon_circle" android:background="@drawable/oval_red" android:layout_width="26dp" android:layout_height="26dp">
+            <TextView android:textSize="12sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:layout_gravity="center" android:id="@+id/bp_imarathon_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:fontFamily="@font/muller_bold"/>
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

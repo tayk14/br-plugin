@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bp_back_blue" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="5dp">
+    <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/textView41" android:background="@drawable/bp_tile_background_surprise" android:paddingLeft="30dp" android:paddingTop="10dp" android:paddingRight="30dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ежедневное выполнение заданий открывает новые уровни" android:layout_alignParentTop="true" android:layout_centerInParent="true" android:textAllCaps="true" android:fontFamily="@font/muller_bold"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bp_item_blue_corners" android:layout_width="250dp" android:layout_height="51dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="25dp">
+            <TextView android:textSize="9sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/bp_marathon_tasks" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="Заданий выполнено сегодня:" android:layout_toRightOf="@+id/bp_marathon_fr1" android:layout_centerHorizontal="false" android:layout_centerVertical="true" android:fontFamily="@font/muller_bold"/>
+            <FrameLayout android:id="@+id/bp_marathon_fr1" android:background="@drawable/bp_yellow_lt_rb" android:layout_width="25dp" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView15" android:layout_width="16dp" android:layout_height="wrap_content" app:srcCompat="@drawable/bp_plan"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <View android:id="@+id/view7" android:background="@drawable/br_taxi_border_gradient" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="25dp">
+            <FrameLayout android:id="@+id/bp_marathon_fr2" android:background="@drawable/bp_yellow_lb_rt" android:layout_width="25dp" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView14" android:layout_width="16dp" android:layout_height="wrap_content" app:srcCompat="@drawable/bp_clock2"/>
+            </FrameLayout>
+            <TextView android:textSize="9sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/bp_marathon_period" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="До конца марафона осталось:" android:layout_toRightOf="@+id/bp_marathon_fr2" android:layout_centerHorizontal="false" android:layout_centerVertical="true" android:fontFamily="@font/muller_bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="10sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="clip_horizontal|right" android:id="@+id/textView46" android:layout_width="190dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="17dp" android:text="ДО ОТКРЫТИЯ СЛЕДУЮЩЕГО УРОВНЯ ОСТАЛОСЬ" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:textAllCaps="true" android:fontFamily="@font/muller_bold"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginBottom="15dp" android:layout_toRightOf="@+id/textView46" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_gravity="center_vertical" android:background="@drawable/bp_item_blue_corners2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="#ffba08" android:gravity="center" android:layout_gravity="center" android:id="@+id/bp_marathon_time" android:paddingLeft="20dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/imageView16" android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/bp_clock"/>
+    </FrameLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/bp_marathon_RV" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_marginBottom="70dp"/>
+    </RelativeLayout>
+</RelativeLayout>

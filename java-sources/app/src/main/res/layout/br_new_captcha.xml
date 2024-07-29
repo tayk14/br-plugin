@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="300dp" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/br_new_captha_img" android:visibility="visible" android:layout_width="240dp" android:layout_height="120dp" android:layout_centerHorizontal="true">
+        <com.tuyenmonkey.mkloader.MKLoader android:id="@+id/br_new_capcha_load" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="20dp" app:mk_color="#ffffff" app:mk_type="LineSpinner"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="5dp" android:layout_below="@+id/br_new_captha_img" android:layout_centerHorizontal="true">
+        <EditText android:textSize="14sp" android:textColor="#ffffffff" android:textColorHint="@color/bg_color_hint" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/br_new_caphca_line" android:background="@drawable/background_br_dialog_updown" android:paddingLeft="10dp" android:layout_width="0px" android:layout_height="match_parent" android:hint="Введите текст из картинки" android:ems="10" android:maxLength="20" android:layout_weight="0.7" android:inputType="text" android:imeOptions="flagNoExtractUi|flagNoFullscreen|actionSend" android:fontFamily="@font/muller_bold"/>
+        <Button android:textColor="#ffffffff" android:id="@+id/br_new_capcha_ok" android:background="@drawable/butt" android:layout_width="0px" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="Готово" android:layout_weight="0.3" android:fontFamily="@font/muller_bold"/>
+    </LinearLayout>
+</RelativeLayout>

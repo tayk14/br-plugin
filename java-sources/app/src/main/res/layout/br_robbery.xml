@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/br_robbery_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="10dp">
+        <TextView android:textSize="12sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/br_robbery_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Выберите деньги из ячейки и нажмите на мешок." android:drawableLeft="@drawable/exclamation_mark2" android:drawablePadding="5dp" android:layout_centerInParent="true" android:fontFamily="@font/muller_bold"/>
+        <ImageView android:id="@+id/br_robbery_close" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:cropToPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/br_close2"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="185dp">
+        <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/background_br_dialog_updown" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginTop="55dp" android:layout_marginRight="5dp" android:layout_marginBottom="55dp">
+                <TextView android:textSize="18sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/textView3" android:background="@drawable/br_theme_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="в мешке" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="18sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/br_robbery_price" android:layout_width="match_parent" android:layout_height="match_parent" android:text="1 500 000 Р" android:fontFamily="@font/muller_bold"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1.5">
+            <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_bag" android:layout_width="432dp" android:layout_height="270dp" app:srcCompat="@drawable/br_robbery_bag_1"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0px" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/background_br_dialog_updown" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginTop="55dp" android:layout_marginRight="10dp" android:layout_marginBottom="55dp">
+                <TextView android:textSize="18sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/textView3" android:background="@drawable/br_silver_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="в ячейке" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="18sp" android:textColor="@color/common_signin_btn_dark_text_default" android:gravity="center" android:id="@+id/br_robbery_safe" android:layout_width="match_parent" android:layout_height="match_parent" android:text="1 500 000 Р" android:fontFamily="@font/muller_bold"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/background_br_dialog_updown" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1">
+            <FrameLayout android:id="@+id/br_robbery_cell_0" android:background="@drawable/br_robbery_gr" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_money_0" android:layout_width="60dp" android:layout_height="40dp" app:srcCompat="@drawable/br_robbery_money4"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/br_robbery_cell_1" android:background="@drawable/br_robbery_gr" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_money_1" android:layout_width="60dp" android:layout_height="40dp" app:srcCompat="@drawable/br_robbery_money1"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/br_robbery_cell_2" android:background="@drawable/br_robbery_gr" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_money_2" android:layout_width="60dp" android:layout_height="40dp" app:srcCompat="@drawable/br_robbery_money2"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/br_robbery_cell_3" android:background="@drawable/br_robbery_gr" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_money_3" android:layout_width="60dp" android:layout_height="40dp" app:srcCompat="@drawable/br_robbery_money3"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/br_robbery_cell_4" android:background="@drawable/br_robbery_gr" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_money_4" android:layout_width="60dp" android:layout_height="40dp" app:srcCompat="@drawable/br_robbery_money1"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/br_robbery_cell_5" android:background="@drawable/br_robbery_gr" android:layout_width="0px" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_money_5" android:layout_width="60dp" android:layout_height="40dp" app:srcCompat="@drawable/br_robbery_money4"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0px" android:layout_weight="1">
+            <FrameLayout android:id="@+id/br_robbery_cell_6" android:background="@drawable/br_robbery_gr" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_money_6" android:layout_width="60dp" android:layout_height="40dp" app:srcCompat="@drawable/br_robbery_money3"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/br_robbery_cell_7" android:background="@drawable/br_robbery_gr" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_money_7" android:layout_width="60dp" android:layout_height="40dp" app:srcCompat="@drawable/br_robbery_money2"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/br_robbery_cell_8" android:background="@drawable/br_robbery_gr" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_money_8" android:layout_width="60dp" android:layout_height="40dp" app:srcCompat="@drawable/br_robbery_money4"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/br_robbery_cell_9" android:background="@drawable/br_robbery_gr" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_money_9" android:layout_width="60dp" android:layout_height="40dp" app:srcCompat="@drawable/br_robbery_money1"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/br_robbery_cell_10" android:background="@drawable/br_robbery_gr" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_money_10" android:layout_width="60dp" android:layout_height="40dp" app:srcCompat="@drawable/br_robbery_money3"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/br_robbery_cell_11" android:background="@drawable/br_robbery_gr" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/br_robbery_money_11" android:layout_width="60dp" android:layout_height="40dp" app:srcCompat="@drawable/br_robbery_money2"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

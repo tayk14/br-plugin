@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="55dp" android:paddingTop="18dp" android:paddingRight="40dp" android:paddingBottom="15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/list_fl_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="20dp" android:layout_weight="1.5" android:layout_centerVertical="true">
+        <include android:id="@+id/tileDonateFrame" android:visibility="visible" layout="@layout/donate_tile"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/list_ll_1" android:background="@drawable/donate_background_gray" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_weight="1" android:layout_toRightOf="@+id/list_fl_1" android:layout_alignParentRight="true">
+        <TextView android:textSize="14sp" android:textColor="#ffffff" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:text="Список услуг" android:textAllCaps="true" android:fontFamily="@font/muller_bold"/>
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarThumbVertical="@drawable/br_dialog_scroll_yellow_thumb" android:scrollbarTrackVertical="@drawable/br_dialog_scroll_yellow_track" android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="outsideInset" android:id="@+id/donateServicesRV" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:fadeScrollbars="false"/>
+    </LinearLayout>
+</LinearLayout>

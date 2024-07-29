@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="30dp" android:paddingTop="10dp" android:paddingRight="30dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/donatePreviewCarBlock1" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true">
+        <Button android:id="@+id/donateButtonBack" android:background="@drawable/previous_icon" android:layout_width="42dp" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <TextView android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="Цвет" android:textAllCaps="true" android:fontFamily="@font/muller_bold"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/colorSelectRV" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/donatePreviewCarBlock2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/donatePreviewCarBlock3" android:layout_toRightOf="@+id/donatePreviewCarBlock1" android:layout_centerVertical="true">
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/donateCarPreviewName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:fontFamily="@font/muller_bold"/>
+        <ImageView android:id="@+id/donateCarPreviewImage" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/donateCarPreviewName"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/donatePreviewCarBlock3" android:layout_width="150dp" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/donate_background_gray" android:paddingLeft="12dp" android:paddingTop="16dp" android:paddingRight="12dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Скорость" android:textAllCaps="true" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_gravity="right" android:id="@+id/text_max" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="235 км/ч" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <ProgressBar android:id="@+id/progress_max" android:layout_width="match_parent" android:layout_height="9dp" android:layout_marginTop="8dp" android:layout_marginBottom="10dp" android:max="350" android:progressDrawable="@drawable/scroll_yellow_track_horizontal" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+            <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ускорение" android:textAllCaps="true" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_gravity="right" android:id="@+id/text_0100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.5 сек" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <ProgressBar android:id="@+id/progress_0100" android:layout_width="match_parent" android:layout_height="9dp" android:layout_marginTop="8dp" android:layout_marginBottom="10dp" android:max="20" android:progressDrawable="@drawable/scroll_yellow_track_horizontal" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+            <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Вместимость" android:textAllCaps="true" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_gravity="right" android:id="@+id/text_capacity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4 чел." android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <ProgressBar android:id="@+id/progress_capacity" android:layout_width="match_parent" android:layout_height="9dp" android:layout_marginTop="8dp" android:layout_marginBottom="10dp" android:max="10" android:progressDrawable="@drawable/scroll_yellow_track_horizontal" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+            <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Багажник" android:textAllCaps="true" android:fontFamily="@font/muller_bold"/>
+                <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_gravity="right" android:id="@+id/text_boot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25 кг" android:fontFamily="@font/muller_bold"/>
+            </FrameLayout>
+            <ProgressBar android:id="@+id/progress_boot" android:layout_width="match_parent" android:layout_height="9dp" android:layout_marginTop="8dp" android:max="7800" android:progress="10" android:progressDrawable="@drawable/scroll_yellow_track_horizontal" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        </LinearLayout>
+        <TextView android:textSize="10sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/priceStroked" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="TextView" android:fontFamily="@font/muller_bold"/>
+        <Button android:textSize="14sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/button" android:background="@drawable/donate_tile_button" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="45.000 BC" android:drawableLeft="@drawable/basket_icon" android:drawablePadding="-15dp" android:fontFamily="@font/muller_bold"/>
+    </LinearLayout>
+</RelativeLayout>

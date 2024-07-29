@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#6c7198" android:endColor="#2a2d48" android:angle="270" android:centerColor="#2a2d48"/>
+            <corners android:radius="12dp"/>
+            <padding android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#383c60"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/social_interaction_buttons_background_mask"/>
+</layer-list>

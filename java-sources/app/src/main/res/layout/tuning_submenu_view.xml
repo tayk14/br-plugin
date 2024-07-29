@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/tuning_bg_submenu" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:layout_marginTop="40dp" android:layout_marginRight="70dp">
+        <TextView android:textSize="28sp" android:textColor="@color/common_signin_btn_dark_text_default" android:id="@+id/tuning_submenu_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tuning_title_submenu" android:layout_centerVertical="true" android:fontFamily="@font/muller_bold" android:layout_alignParentStart="true"/>
+        <Button android:id="@+id/tuning_submenu_close" android:background="@drawable/menu_close" android:layout_width="25dp" android:layout_height="25dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/underline" android:background="#ce0e03" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="20dp" android:layout_marginStart="70dp" android:layout_marginEnd="70dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarThumbVertical="@drawable/tuning_scroll_submenu_thumb" android:scrollbarTrackVertical="@drawable/tuning_scroll_submenu_track" android:layout_gravity="center_horizontal" android:id="@+id/recv_submenu_items" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_marginStart="70dp" android:layout_marginEnd="70dp"/>
+</LinearLayout>

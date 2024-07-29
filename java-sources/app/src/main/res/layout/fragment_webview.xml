@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@color/black" android:paddingLeft="24dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:textColor="@color/white" android:paddingTop="24dp" android:paddingBottom="24dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/donate" android:layout_weight="1" android:fontFamily="@font/montserrat_bold"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/close" android:padding="8dp" android:layout_width="46dp" android:layout_height="46dp" android:src="@drawable/ic_close_black_24dp"/>
+    </LinearLayout>
+    <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>
